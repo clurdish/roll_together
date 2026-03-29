@@ -111,7 +111,7 @@ button {
   padding: 0px;
   height: 41px;
   width: 139px;
-  background-color: #F78C25;
+  background-color: rgb(247, 140, 37);
   color: #FFFFFF;
   outline: none;
   display: flex;
@@ -253,4 +253,44 @@ input:focus, textarea:focus, select:focus {
 
 .c-error { 
   color: red;
+}
+
+ul.user-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.user-list li {
+  list-style: none;
+  /* padding: 0.15em; */
+  display: flex;
+  align-items: center;
+  border: rgba(100, 100, 100, 0.6) 2px solid;
+  /* background-color: rgba(200, 200, 200, 0.5); */
+  background-color: rgba(247, 140, 37, 0.3);
+  border-radius: 5px;
+}
+
+.user-list li:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.profile-sm {
+  height: 3em;
+  padding: 0.5em;
+  /* width: 2em; */
+}
+
+.user-list .profile-sm {
+  margin-right: 0.5em;
+  margin-left: 0.25em;
+}
+
+.firstPage {
+  display: none;
+}
+
+hr {
+  flex-grow: 1;
+  margin: 1em 0;
 }
